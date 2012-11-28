@@ -1,0 +1,12 @@
+%a.btn.btn-navbar{data: {toggle: "collapse", target: ".nav-collapse"}}
+  %span.icon-bar
+  %span.icon-bar
+  %span.icon-bar
+
+= link_to root_path, class: 'brand' do
+  GSuggest
+
+.nav-collapse.in
+  = form_tag q_path, class: 'navbar-form pull-right' do
+    = text_field_tag :code, '', placeholder: @q
+    = submit_tag 'Search', class: 'btn'

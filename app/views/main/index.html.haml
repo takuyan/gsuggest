@@ -1,6 +1,8 @@
-= form_tag search_path, method: :get do
-  %p
-    = text_field_tag :q
-    = hidden_field_tag :output, :toolbar
-  %p
-    = submit_tag 'search'
+.row
+  .span6.offset3
+    .main_search
+      = form_tag q_path, method: :get do
+        %p
+          = text_field_tag :q, '',  class: 'span4'
+        %p
+          = submit_tag 'Suggest!', class: 'btn btn-large'

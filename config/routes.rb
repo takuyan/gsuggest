@@ -1,4 +1,5 @@
 Gsuggest::Application.routes.draw do
   root to: 'main#index'
-  get "main/search", as: :search
+  #match "/:q" => "main#search", as: :q, via: [:get]
+  get "main/search", as: :q
 end

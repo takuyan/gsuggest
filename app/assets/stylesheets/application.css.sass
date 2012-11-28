@@ -1,0 +1,36 @@
+//= require_self
+//= require_tree .
+
+@import 'bootstrap'
+@import "bootstrap-responsive"
+
+body
+  height: 100%
+  padding:
+    top: 60px
+  background: image-url('linedpaper.png') repeat
+
+@media (max-width: 480px)
+  body
+    padding-top: 0px
+
+.main_search
+  text-align: center
+  min-height: 300px
+  padding: 50px 0
+  #q
+    line-height: 2em
+    height: 2em
+    font:
+      size: 2em
+
+  h1, h2, h4, h6
+    font:
+      family: "Lucida Grande", "Lucida Sans Unicode", 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','Meiryo UI','メイリオ',Verdana,'ＭＳ Ｐゴシック',sans-serif
+  h1
+    margin: 10px 0 20px
+  h4
+    line-height: 1.6em
+    font:
+      weight: normal
+
