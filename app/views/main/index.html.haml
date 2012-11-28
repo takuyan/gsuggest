@@ -1,0 +1,6 @@
+= form_tag search_path, method: :get do
+  %p
+    = text_field_tag :q
+    = hidden_field_tag :output, :toolbar
+  %p
+    = submit_tag 'search'
