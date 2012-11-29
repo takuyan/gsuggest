@@ -7,6 +7,6 @@
   GSuggest
 
 .nav-collapse.in
-  = form_tag q_path, class: 'navbar-form pull-right' do
+  = form_tag q_path, method: :get, class: 'navbar-form pull-right' do
     = text_field_tag :code, '', placeholder: @q
-    = submit_tag 'Search', class: 'btn'
+    = submit_tag 'Search', class: 'btn', data: {disable_with: 'Sending...'}
