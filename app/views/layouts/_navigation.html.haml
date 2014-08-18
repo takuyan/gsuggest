@@ -1,12 +1,14 @@
-%a.btn.btn-navbar{data: {toggle: "collapse", target: ".nav-collapse"}}
-  %span.icon-bar
-  %span.icon-bar
-  %span.icon-bar
+%nav.navbar.navbar-default.navbar-fixed-top{role: :navigation}
+  .container
+    .navbar-header
+      %button.navbar-toggle{type: :button, data: {toggle: "collapse", target: ".bs-navbar-collapse"}}
+        %span.sr-only Toggle navigation
+        %span.fa.fa-th-large
+      %a.navbar-brand{href: '/'}
+        Gsuggest
 
-= link_to root_path, class: 'brand' do
-  GSuggest
-
-.nav-collapse.in
-  = form_tag q_path, method: :get, class: 'navbar-form pull-right' do
-    = text_field_tag :code, '', placeholder: @q
-    = submit_tag 'Search', class: 'btn', data: {disable_with: 'Sending...'}
+    .collapse.navbar-collapse.bs-navbar-collapse{role: :navigation}
+      = form_tag q_path, method: :get, class: 'navbar-form navbar-right' do
+        .form-group
+          = text_field_tag :q, '', placeholder: @q, class: 'form-control'
+          = submit_tag 'Search', class: 'btn btn-primary', data: {disable_with: 'Sending...'}
