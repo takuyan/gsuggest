@@ -5,7 +5,7 @@ require 'kconv'
 
 class MainController < ApplicationController
 
-  caches_action :index, :search, expires_in: 1.month
+  caches_action :index, expires_in: 1.month
 
   def index
   end
