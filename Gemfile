@@ -1,12 +1,14 @@
+ruby '2.1.2'
+
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.19'
 gem 'jquery-rails'
-gem "haml", ">= 3.1.6"
-gem "bootstrap-sass", ">= 2.0.3"
-gem "haml-rails", ">= 0.3.4"
-gem "rspec-rails", ">= 2.10.1", group: :test
-gem "factory_girl_rails", ">= 3.3.0", group: :test
+gem 'haml', '>= 3.1.6'
+gem 'bootstrap-sass', '>= 2.0.3'
+gem 'haml-rails', '>= 0.3.4'
+gem 'rspec-rails', '>= 2.10.1', group: :test
+gem 'factory_girl_rails', '>= 3.3.0', group: :test
 gem 'ffaker', group: :test
 gem 'nokogiri'
 
