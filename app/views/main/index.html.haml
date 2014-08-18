@@ -2,7 +2,15 @@
   .col-md-6.col-md-offset-3
     .main_search
       = form_tag q_path, method: :get, html: { class: 'form' } do
-        %p
+        .form-group
           = text_field_tag :q, '',  class: 'form-control'
-        %p
+          %p.help-block
+            例）
+            = link_to '睡眠不足', q_path(q: '睡眠不足')
+            ,
+            = link_to '新築マンション', q_path(q: '新築マンション')
+            ,
+            = link_to '筋肉痛', q_path(q: '筋肉痛')
+
+        .form-group
           = submit_tag 'Suggest!', class: 'btn btn-lg btn-primary', data: {disable_with: 'Sending...'}
