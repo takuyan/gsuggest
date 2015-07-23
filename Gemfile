@@ -18,6 +18,7 @@ gem 'therubyracer', platforms: :ruby
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'haml-rails'
+gem 'pg'
 
 group :production do
   gem 'rails_12factor'
