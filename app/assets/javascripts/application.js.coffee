@@ -1,7 +1,7 @@
 #= require jquery
 #= require jquery_ujs
-#= require bootstrap
 #= require_self
+#= require bootstrap
 
-$(".nav-collapse").collapse()
-
+$ ->
+  $(".navbar-collapse").collapse()

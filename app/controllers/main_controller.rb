@@ -4,9 +4,6 @@ require 'open-uri'
 require 'kconv'
 
 class MainController < ApplicationController
-
-  caches_action :index, expires_in: 1.month
-
   def index
   end
 

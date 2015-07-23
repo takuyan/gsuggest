@@ -1,43 +1,38 @@
-ruby '2.1.2'
+ruby '2.2.2'
 
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.19'
+gem 'rails', '4.2.3'
+
+gem 'bootstrap-sass'
+gem 'coffee-rails', '~> 4.1.0'
+gem 'font-awesome-rails'
+gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
-gem 'haml', '>= 3.1.6'
-gem 'bootstrap-sass', '>= 2.0.3'
-gem 'haml-rails', '>= 0.3.4'
-gem 'rspec-rails', '>= 2.10.1', group: :test
-gem 'factory_girl_rails', '>= 3.3.0', group: :test
-gem 'ffaker', group: :test
+gem 'jquery-turbolinks'
 gem 'nokogiri'
+gem 'sass-rails', '~> 5.0'
+gem 'sqlite3'
+gem 'slim-rails'
+gem 'therubyracer', platforms: :ruby
+gem 'turbolinks'
+gem 'uglifier', '>= 1.3.0'
+gem 'haml-rails'
 
-# Bundle edge Rails instead:
-# gem 'rails', git: 'git://github.com/rails/rails.git'
-#gem 'sqlite3'
-
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'therubyracer', platforms: :ruby
-  gem 'uglifier', '>= 1.0.3'
-  gem 'font-awesome-sass-rails'
+group :production do
+  gem 'rails_12factor'
 end
 
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
+# Use Unicorn as the app server
 # gem 'unicorn'
 
-# Deploy with Capistrano
-# gem 'capistrano'
+group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug'
 
-# To use debugger
-# gem 'debugger'
+  # Access an IRB console on exception pages or by using <%= console %> in views
+  gem 'web-console', '~> 2.0'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end

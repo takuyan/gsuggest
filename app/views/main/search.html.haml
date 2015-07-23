@@ -5,7 +5,7 @@
         %p
           = text_field_tag :q, @q,  class: 'form-control'
         %p
-          = submit_tag 'Suggest!', class: 'btn btn-lg btn-primary', data: {disable_with: 'Sending...'}
+          = submit_tag 'Suggest!', class: 'btn btn-lg btn-primary', data: { disable_with: 'Sending...' }
 
       %hr
 
@@ -14,7 +14,7 @@
       %h2
         #{@suggestions.size}件
       %p.help-block
-        = l Time.now
+        = Time.now.to_s(:db)
 
       %hr
 
