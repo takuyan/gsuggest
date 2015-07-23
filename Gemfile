@@ -12,7 +12,6 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'nokogiri'
 gem 'sass-rails', '~> 5.0'
-gem 'sqlite3'
 gem 'slim-rails'
 gem 'therubyracer', platforms: :ruby
 gem 'turbolinks'
