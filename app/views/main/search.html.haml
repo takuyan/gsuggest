@@ -20,5 +20,7 @@
 
       - @suggestions.each do |s|
         %h4
-          = link_to "/main/search?q=#{s.toutf8}" do
+          = link_to "/main/search?q=#{s.toutf8}", class: 'tip', title: 'クリックして更に検索' do
             = s
+          = link_to "https://www.google.co.jp?q=#{s.toutf8}", target: :_blank, class: 'tip', title: "#{j s.toutf8}でGoogle検索" do
+            %i.fa.fa-google

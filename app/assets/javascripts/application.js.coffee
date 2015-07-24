@@ -4,4 +4,5 @@
 #= require bootstrap
 
 $ ->
-  $(".navbar-collapse").collapse()
+  $('.navbar-collapse').collapse()
+  $('.tip').tooltip()
